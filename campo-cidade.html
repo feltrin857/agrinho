@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="campo-cidade.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="campo-cidade.html">Campo-Cidade</a>
+      <a href="sao-jose.html">São José dos Pinhais</a>
+      <a href="parana.html">Paraná</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="conteudo">
+      <h1>Conexão Campo-Cidade</h1>
+      <p>O campo é o espaço onde são produzidos os alimentos que consumimos todos os dias: frutas, verduras, legumes, grãos, carnes, leite e muito mais. Também é no campo que se encontram recursos naturais importantes, como a água, o solo fértil e a biodiversidade.</p>
+      <p>Já a cidade é o local onde acontecem os processos de transformação e distribuição desses produtos. Nas cidades estão os comércios, as indústrias, os transportes, os hospitais, as escolas e a maioria dos serviços que usamos diariamente.</p>
+      <p>A tecnologia criada nas cidades, como máquinas agrícolas, sistemas de irrigação, aplicativos e estudos científicos, ajuda os produtores rurais a trabalharem melhor e com mais produtividade.</p>
+      <p>Por isso, a cidade depende do campo para se alimentar, e o campo depende da cidade para crescer. É uma relação de troca e cooperação.</p>
+      <p>Valorizar essa conexão é reconhecer que o desenvolvimento de um lugar só é possível quando todos os espaços trabalham juntos: quem planta, quem transporta, quem compra, quem vende, quem consome.</p>
+      
+      <div class="imagem-container">
+        <img src="imagens/conexao-campo-cidade.jpeg" alt="Imagem representando a conexão entre o campo e a cidade">
+      </div>
+    </section>
+
+    <section class="conteudo">
+      <h2>Conexão Campo-Cidade no Paraná</h2>
+      <p>O Paraná é um dos maiores produtores agrícolas do país, com destaque para a soja, o milho, o trigo, o feijão e o café. Também se destaca na produção de carne de frango, suína e leite.</p>
+      <p>O estado possui uma agricultura moderna e mecanizada, mas também mantém muitos pequenos produtores e agricultores familiares. Além da força do campo, o Paraná tem um setor urbano bem desenvolvido: conta com universidades públicas reconhecidas, como a UFPR e a UEL, e grandes centros industriais e comerciais.</p>
+    </section>
+
+    <section class="grafico-container">
+      <div class="grafico">
+        <h3>Principais Produtos Agrícolas</h3>
+        <canvas id="grafico1"></canvas>
+      </div>
+
+      <div class="grafico">
+        <h3>Produção Animal no Paraná</h3>
+        <canvas id="grafico2"></canvas>
+      </div>
+
+      <div class="grafico">
+        <h3>Composição da Economia</h3>
+        <canvas id="grafico3"></canvas>
+      </div>
+    </section>
+
+    <section class="conteudo">
+      <p>Cidades como Londrina, Maringá, Cascavel, Foz do Iguaçu e Ponta Grossa são polos regionais importantes. O Paraná também investe em educação rural, sustentabilidade e agroindústria, fortalecendo a conexão entre o campo e a cidade.</p>
+    </section>
+  </main>
+
+  <script src="campo-cidade.js"></script>
+</body>
+</html>

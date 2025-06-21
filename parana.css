@@ -1,0 +1,79 @@
+/* parana.css */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #5ca664;
+}
+
+.timeline-event {
+  margin: 30px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #5ca664;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-event h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.timeline-event p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 10px;
+  }
+
+  .timeline-event {
+    padding-left: 30px;
+  }
+
+  .timeline-event::before {
+    left: 6px;
+  }
+}
+
+.image-container {
+  background-color: #92e27c;
+  border-radius: 15px;
+  max-width: 620px;
+  margin: 20px auto;
+  padding: 10px;
+  display: block;
+}
+
+.image-container img {
+  display: block;
+  max-width: 600px;
+  max-height: 350px;
+  width: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}

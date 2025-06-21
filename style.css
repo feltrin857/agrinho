@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e fundo geral */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #92E37C; /* verde claro vibrante */
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Formas verdes suaves */
+body::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, #66bb6a 0%, transparent 70%);
+  opacity: 0.15; /* suavizado */
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -120px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at center, #81c784 0%, transparent 70%);
+  opacity: 0.15; /* suavizado */
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Ajustar conteúdo acima das formas */
+.menu, main, .conteudo {
+  position: relative;
+  z-index: 1;
+}
+
+/* Menu superior */
+.menu {
+  background-color: #228B22; /* Verde floresta */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  background-color: #1c5f1c; /* verde escuro para botões */
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #145214;
+}
+
+.menu a:focus {
+  outline: 2px dashed #ffffff;
+  outline-offset: 3px;
+}
+
+/* Conteúdo central */
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px; /* NOVO */
+  margin: 0 auto;     /* NOVO */
+}
+
+/* Blocos de texto */
+.conteudo {
+  background-color: #f9f9f9; /* branco gelo */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #004d40;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Container dos gráficos */
+.grafico-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 960px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Cada gráfico */
+.grafico {
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1 1 280px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  .conteudo {
+    padding: 20px;
+  }
+
+  .grafico-container {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .grafico {
+    max-width: 100%;
+  }
+}
+/* Responsividade intermediária (tablets e pequenos desktops) */
+@media (max-width: 900px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .conteudo {
+    padding: 25px;
+  }
+
+  .grafico {
+    flex: 1 1 220px;
+  }
+}
+
+/* Garantir que imagens e vídeos se ajustem */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Previne rolagem horizontal indesejada */
+html, body {
+  overflow-x: hidden;
+}
