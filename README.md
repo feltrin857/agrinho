@@ -32,6 +32,14 @@ Abra os arquivos .html em um navegador para visualizar o conteúdo.
 
 ---
 
+##instruções para as imagens 
+
+Todas as imagens utilizadas devem ser colocadas na pasta:
+"imagens"
+Os arquivos de'.html' já estão com os caminhos corretos para essa pasta.
+
+---
+
 ## Contato
 
 Gabriel Lima Feltrin  
