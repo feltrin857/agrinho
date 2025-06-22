@@ -32,7 +32,7 @@ Abra os arquivos .html em um navegador para visualizar o conteúdo.
 
 ---
 
-##instruções para as imagens 
+## Instruções para as imagens 
 
 Todas as imagens utilizadas devem ser colocadas na pasta:
 "imagens"
